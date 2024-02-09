@@ -1,5 +1,5 @@
 import jwt from "jsonwebtoken";
-import { handleError } from "../error/handleError";
+import { handleError } from "../error/handleError.js";
 import { Response } from "express";
 
 const generateToken = async (_id: string | unknown, res: Response) => {
