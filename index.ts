@@ -1,11 +1,11 @@
 import { config } from "dotenv";
 import express, { Express, Request, Response } from "express";
 import cors from "cors";
-import connectDatabase from "./db/connectDatabase";
+import connectDatabase from "./db/connectDatabase.js";
 
-import AuthenticationHandler from "./route/authentication.route";
-import AdminAuthHandler from "./admin-route/admin.auth.route";
-import AdminInfoHandler from "./admin-route/admin.info.route";
+import AuthenticationHandler from "./route/authentication.route.js";
+import AdminAuthHandler from "./admin-route/admin.auth.route.js";
+import AdminInfoHandler from "./admin-route/admin.info.route.js";
 
 config();
 

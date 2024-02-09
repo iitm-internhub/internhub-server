@@ -1,7 +1,7 @@
 import { Request, Response } from "express";
-import { handleError } from "../error/handleError";
-import User from "../model/user.model";
-import { generateAdminToken } from "../utils/generateToken";
+import { handleError } from "../error/handleError.js";
+import User from "../model/user.model.js";
+import { generateAdminToken } from "../utils/generateToken.js";
 
 const Login = async (req: Request, res: Response) => {
   try {

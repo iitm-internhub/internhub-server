@@ -1,7 +1,7 @@
 import { Request, Response } from "express";
-import { handleError } from "../error/handleError";
-import User, { UserSchemaInterface } from "../model/user.model";
-import generateToken from "../utils/generateToken";
+import { handleError } from "../error/handleError.js";
+import User, { UserSchemaInterface } from "../model/user.model.js";
+import generateToken from "../utils/generateToken.js";
 import bcrypt from "bcrypt";
 
 const Signup = async (req: Request, res: Response) => {

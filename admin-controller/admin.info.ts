@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
-import User from "../model/user.model";
-import { handleError } from "../error/handleError";
+import User from "../model/user.model.js";
+import { handleError } from "../error/handleError.js";
 
 const getAllUsers = async (req: Request | any, res: Response) => {
   try {
