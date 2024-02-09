@@ -5,9 +5,9 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "build": "tsc && cp package.json dist/package.json && cd ./dist && npm i",
+    "build": "tsc",
     "prestart": "npm run build",
-    "start": "node index.js",
+    "start": "node dist/index.js",
     "dev": "concurrently \"npx tsc -w\" \"nodemon dist/index.js\"",
     "predev": "npm run build"
   },
