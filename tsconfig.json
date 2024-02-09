@@ -7,6 +7,5 @@
   "esModuleInterop": true,
   "module": "CommonJS"
   
-},
-"include": ["package.json"],
+}
 }
